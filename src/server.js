@@ -43,24 +43,18 @@ const listener = httpServer.listen(PORT, function () {
     console.error(err);
   }
 });
+
 io.on('connection', (socket) => {
  
-    
+  console.log('Usuario conectado') 
     
   socket.on('agregar', async(data) => {
-    
-    if(data){
-      
-       
-        
-        io.sockets.emit('resultado', await articulos.getAll()) 
-
-    }
- 
-  
-    
-  
+    console.log(data)   
+    const valores=await articulos.getAll()
+    let idmax=valores[valores.length-1].id
+    data.id=idmax
+    valores.push(data)
+    console.log(valores)
+    io.sockets.emit('resultado', valores) 
 })
-    
-
   })
