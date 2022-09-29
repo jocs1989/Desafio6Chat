@@ -3,7 +3,9 @@ const exphbs = require("express-handlebars");
 const express = require("express");
 const { NONAME } = require("dns");
 const Contenedora = require(__dirname + "/routes/contenedora.js");
+const Integrante = require(__dirname + "/routes/integrante.js");
 const articulos = new Contenedora(__dirname + "/routes/articulos.txt");
+const dbchat =new Integrante(__dirname + "/routes/integrantes.txt")
 const { Server: HttpServer } = require('http');
 const { Server: IOServer } = require('socket.io');
 const chat = require(__dirname + "/routes/chat.js");
@@ -57,4 +59,17 @@ io.on('connection', (socket) => {
     console.log(valores)
     io.sockets.emit('resultado', valores) 
 })
+//chat
+
+socket.on('msg', async(data) => {
+    
+  const msg=await dbchat.save(data)
+ 
+  
+  
+  io.sockets.emit('mensageresultado', await dbchat.getAll()) 
+})
+
+
+
   })
