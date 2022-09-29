@@ -53,7 +53,7 @@ socket.on("mensageresultado", (data) => {
       (dato) => `
       <div class="media media-chat media-chat-reverse">
       <img class="avatar" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
-      ${dato.mail}
+      <span class="colormail">${dato.mail}</span> [<span class="colortime">${dato.fecha}</span>]
       <div class="media-body">        
         <p><br> ${dato.msg}</p>
         <p class="meta"><time datetime="${dato.year}">[dato.fecha]</time></p>

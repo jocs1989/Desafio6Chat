@@ -214,8 +214,9 @@ h4.card-title {
 .media-chat.media-chat-reverse .media-body p {
     float: right;
     clear: right;
-    background-color: #48b0f7;
-    color: #fff;
+    background-color: #48f7a5;
+    color: #0e1110;
+  
 }
 
 .media-chat .media-body p {
@@ -302,4 +303,13 @@ button, input, optgroup, select, textarea {
 
 .text-info {
     color: #48b0f7 !important;
+}
+
+
+
+.colormail{
+    color: rgb(0, 106, 255);
+}
+.colortime{
+    color: rgb(228, 58, 58);
 }
