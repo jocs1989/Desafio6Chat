@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background-color:#ced4da;
+    ;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+
+}
+.menu_menu {
+    margin-top: 100px;
+    margin-left:200px;
+    margin-right:200px;
+    height: 350px;
+   
+
+}

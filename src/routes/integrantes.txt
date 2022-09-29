@@ -1,0 +1,27 @@
+[
+  {
+    "nombre": "Jocsan Zamora Robredo",
+    "alias": "Jocsan",
+    "id": 1
+  },
+  {
+    "nombre": "Gerson Arturo",
+    "alias": "Arturo",
+    "id": 2
+  },
+  {
+    "nombre": "Jose Perez",
+    "alias": "Leon",
+    "id": 3
+  },
+  {
+    "nombre": "Jocsan Zamora Robredo",
+    "alias": "JZR",
+    "id": 4
+  },
+  {
+    "nombre": "Juan Perez",
+    "alias": "JP",
+    "id": 5
+  }
+]
